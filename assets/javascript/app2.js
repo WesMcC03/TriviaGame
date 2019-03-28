@@ -37,7 +37,7 @@ function startquiz() {
     console.log(questionsbank[0]);
     startbutton.innerHTML= "";
 }
-
+// Function to tell user answer was correct and increment score count by 1
 function correct() {
     message3.innerHTML = "CORRECT!";
     message2.innerHTML = "";
@@ -46,14 +46,14 @@ function correct() {
     message4.innerHTML = "<button class=buttons001 onclick=next()>Next!</button>";
 
 }
-
+// Fucntion to tell user the answer was incorrect
 function wrong() {
     message3.innerHTML = "INCORRECT ANSWER!";
     message2.innerHTML = "";
     
     message4.innerHTML = "<button class=buttons001 onclick=next()>Next!</button>";  
 }
-
+// Cycles through questions 
     function next() {
         if (questnum =="2") {
             message1.innerHTML = questionsbank[1];
@@ -119,10 +119,19 @@ function wrong() {
             message4.innerHTML = "";
         }
         else if (questnum > "10") {
-           reset();
+            message1.innerHTML = "You got" + (document.getElementById(score01)) + "correct out of 10!";
+            message4.innerHTML = "<button class=buttons001 onclick=reset()>Try Again!</button>";
+            reset();
+            
+            
         }
-function reset(){
 
+function reset(){
+    questnum = 0;
+    score = 0;
+    message1.innerHTML = "Press the Start button to try again!";
+    document.getElementById(startquiz()).reset();
+    
 }
         
     

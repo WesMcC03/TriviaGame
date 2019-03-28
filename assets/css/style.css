@@ -21,8 +21,8 @@
 
 .col { 
     text-align: center;
-    
     height: auto;
+    
 
 }
 
@@ -30,6 +30,10 @@
     background-color: red;
     color: white;
     width: 90px;
-    height:20px;
+    height:auto;
     border: 5 solid black;
+}
+
+#message1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
