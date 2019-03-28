@@ -1,12 +1,48 @@
 // Question Bank
-var questions001 = [  ".1 Who is the Texans Leader for Sacks in Franchise History?", ".2 Who was are first round pick in 2002?",
-".3 What year did the Texans have their first season?", ".4 Who is the Texans frachise leader in receptions?", ".5 What Houston Texans runningback was known for taking a bow in the endzone after scoring?",
-".6 What is the Texans mascot name", ".7 Who is the head coach of the Houston Texans?", ".8 Who is the last Texan to have 3 straight 1000 yard seasons?",
-".9 What Patriot came over to Houston to play on the line for his final year?", ".10 What Bronco came to help Houston after Will Fuller's 2018 season ending injury?"
-]
+var questionsbank = ["The Texans have made the playoffs 3 times.",
+ "The Texans first official season was in 2001",
+"Deshaun Waston has thrown for over 40 combined touchdowns in his first 2 seasons",
+ "JJ Watt is the Texans franchise sack leader",
+"The Texans franchise leading rusher is Lamar Miller",
+ "Texans leader in total tackles is Brian Cushing",
+"Texans leader in interceptions is Danta Hall", 
+"The Texans have won division at least 3 times",
+ "The Texans have an overall winning record",
+"The Texans have led the league in total defense at least one season"]
 
-var correct001 = ["JJ Watt","David Carr","2002","Andre Johnson","Arian Foster","Toro","Bill O'Brien",
- "Deandre Hopkins","Vince Wilfork","Demaryius Thomas"]
+// True/False Button 
+var option01 = ["<button class=buttons001 onclick=q1c()>True</button><br />< br /><button class=button002 onclick=q1i()>False</button>"]
+var option02 =["<button class=buttons001 onclick=q1c()>True</button><br />< br /><button class=button002 onclick=q1i()>False</button>"]
+var option03 =["<button class=buttons001 onclick=q1c()>True</button><br />< br /><button class=button002 onclick=q1i()>False</button>"]
 
- var wrong001 = [ "Wrong1","Wrong2","Wrong3","Wrong4","Wrong5","Wrong6","Wrong7","Wrong8","Wrong9","Wrong10","Wrong11","Wrong12"
-,"Wrong","Wrong","Wrong","Wrong"]
+
+var score = 0;
+    score++;
+var questnum = 0;
+    questnum++;
+
+function startquiz() {
+    message1.textContent= questionsbank[0];
+    message2.textContent= option01;
+    number01.innerHTML= questnum++;
+    console.log(questionsbank[0]);
+}
+
+function correct() {
+    alert("Correct!");
+    score01.textContent= score++;
+    next();
+    
+}
+
+function wrong() {
+    alert("Thats Incorrect!")
+    next();
+}
+
+function next() {
+    message1.textContent= questionsbank[0++];
+
+}
+
+

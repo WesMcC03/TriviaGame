@@ -25,3 +25,11 @@
     height: auto;
 
 }
+
+.buttons001 {
+    background-color: red;
+    color: white;
+    width: 90px;
+    height:20px;
+    border: 5 solid black;
+}

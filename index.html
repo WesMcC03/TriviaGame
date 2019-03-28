@@ -14,10 +14,13 @@
 
    <!-- Linking Bootstrap-->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/css/style.css">
    <!-- Linking JavaScript -->
-   <script src="assets/javascript/app.js"></script>
+   <script src="assets/javascript/app2.js"></script>
     <!-- Linking Google Fonts  -->
     <link href="https://fonts.googleapis.com/css?family=Anton|Baloo+Chettan" rel="stylesheet">
+
+    
 
 </head>
 
@@ -31,24 +34,28 @@
             Once you do begin, you will have 1 minute to answer all 10 questions presented. 
             That's 6 seconds a question so youd better get moving! Good Luck!</p>
           
-          <button id="startbutton" class="btn btn-dark">Start!</button>
+          <button id="startbutton" onclick="startquiz()" class="btn btn-dark">Start!</button>
     </div>
   </div>
       <!-- Trivia Questions Frame  -->
   <div class="container" id="frame01">
       <div class="row">
-          <div class="col">
-            <h2>Texans Trivia Question</h2>
+          <div class="col-4">
             <text>Question:<text id="number01">0</text></text><br />
             <text>Score:<text id="score01">0</text></text>
           </div>
-          <div class="col">
-              <p id="message1">>Answer 1</p>
-              <p id="message2">>Answer 1</p>
-              <p id="message3">>Answer 1</p>
-              <p id="message4">>Answer 1</p>
-             
-            
+          <div class="col-4">
+                <h2>Texans Trivia Question</h2>
+                <text id="message1"></text>
+                <text id="message3"></text>
+                <text id="message4"></text>
+          </div>
+          <div class="col-4">
+              <div>
+                <h2>Answers</h2>
+                <button id="truebutton" class="btn btn-danger" onclick="correct()">TRUE!</button>
+                <button id="falsebutton" class="btn btn-danger" onclick="wrong()">FALSE!</button>
+              </div>
           </div>
         </div>
   </div>
