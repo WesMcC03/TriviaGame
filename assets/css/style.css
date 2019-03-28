@@ -1,0 +1,27 @@
+.body {
+    width: 100%;
+    margin: 5px;
+}
+
+.container-fluid {
+    width: 960px;
+    height: auto;
+    text-align: center;
+   
+}
+
+.jumbotron {
+    text-align: center;
+    padding: 5px;
+    font-family: 'Anton', sans-serif;
+    font-size: 5 rem;
+    color: antiquewhite;
+    
+}
+
+.col { 
+    text-align: center;
+    
+    height: auto;
+
+}

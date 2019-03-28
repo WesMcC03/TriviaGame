@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Texans Trivia!</title>
+
+   <!-- Linking Jquery -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+   <!-- Linking CSS -->
+   <link rel="stylesheet" href="assets/css/style.css">
+
+   <!-- Linking Bootstrap-->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <!-- Linking JavaScript -->
+   <script src="assets/javascript/app.js"></script>
+    <!-- Linking Google Fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Baloo+Chettan" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <!-- Jumbotron Display -->
+  <div class="container">
+    <div class="jumbotron jumbotron-fluid bg-danger">
+          <h1>Texans Trivia!</h1>
+          <p class="lead"> Welcome to the official Texans Trivia Page! In order to begin, push the Start Button Below. 
+            Once you do begin, you will have 1 minute to answer all 10 questions presented. 
+            That's 6 seconds a question so youd better get moving! Good Luck!</p>
+          
+          <button id="startbutton" class="btn btn-dark">Start!</button>
+    </div>
+  </div>
+      <!-- Trivia Questions Frame  -->
+  <div class="container" id="frame01">
+      <div class="row">
+          <div class="col">
+            <h2>Texans Trivia Question</h2>
+            <text>Question:<text id="number01">0</text></text><br />
+            <text>Score:<text id="score01">0</text></text>
+          </div>
+          <div class="col">
+              <p id="message1">>Answer 1</p>
+              <p id="message2">>Answer 1</p>
+              <p id="message3">>Answer 1</p>
+              <p id="message4">>Answer 1</p>
+             
+            
+          </div>
+        </div>
+  </div>
+
+
+        <script src="assets/javascript/app2.js"></script>
+  
+
+</body>
+
+
+</html>
