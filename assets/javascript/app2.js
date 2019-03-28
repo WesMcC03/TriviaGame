@@ -11,9 +11,10 @@ var questionsbank = ["The Texans have made the playoffs 3 times.",
 "The Texans have led the league in total defense at least one season"]
 
 // True/False Button 
-var option01 = ["<button class=buttons001 onclick=q1c()>True</button><br />< br /><button class=button002 onclick=q1i()>False</button>"]
-var option02 =["<button class=buttons001 onclick=q1c()>True</button><br />< br /><button class=button002 onclick=q1i()>False</button>"]
-var option03 =["<button class=buttons001 onclick=q1c()>True</button><br />< br /><button class=button002 onclick=q1i()>False</button>"]
+var option1 =[]
+var option01 = ["<button class=buttons001 onclick=wrong()>True</button><br /><button class=buttons001 onclick=correct()>False</button>"]
+var option02 =["<button class=buttons001 onclick=wrong()>True</button><br />< br /><button class=button001 onclick=correct()>False</button>"]
+var option03 =["<button class=buttons001 onclick=correct()>True</button><br />< br /><button class=button001 onclick=wrong()>False</button>"]
 
 
 var score = 0;
@@ -23,26 +24,10 @@ var questnum = 0;
 
 function startquiz() {
     message1.textContent= questionsbank[0];
-    message2.textContent= option01;
+    message2.innerHTML= option01;
     number01.innerHTML= questnum++;
     console.log(questionsbank[0]);
 }
 
-function correct() {
-    alert("Correct!");
-    score01.textContent= score++;
-    next();
-    
-}
-
-function wrong() {
-    alert("Thats Incorrect!")
-    next();
-}
-
-function next() {
-    message1.textContent= questionsbank[0++];
-
-}
 
 
